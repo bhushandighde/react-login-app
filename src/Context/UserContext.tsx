@@ -5,12 +5,15 @@ import type { ReactNode } from "react";
 
 
 export const UserContext =createContext <UserContextType|undefined>(undefined);
-
 export const  UserContextProvider=({children}:{children: ReactNode})=>{
     const [users,setUsers]=useState<User|undefined>();
+    
+   
+    const isAuthenticated=!!users;
+    
 
     return (
-        <UserContext.Provider value={{users,setUsers}}>
+        <UserContext.Provider value={{users,setUsers,isAuthenticated}}>
         {children}
         </UserContext.Provider>
     )

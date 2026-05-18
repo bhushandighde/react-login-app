@@ -4,13 +4,13 @@ import { useUserContext } from "./Context/UserContext"
 import {Home} from "./Pages/Home"
 
 export const App =():any=>{
-const {users}=useUserContext();
+const {isAuthenticated}=useUserContext();
 
   return (
     <Routes>
       <Route
         path="/"
-        element={users ? <Home /> : <Login />}
+        element={isAuthenticated ? <Home /> : <Login />}
       />
     </Routes>)
 }
