@@ -1,0 +1,20 @@
+[
+    {
+    "id": 1,
+    "title": "Test",
+    "content": "TESTTCONTENTBODY",
+    "createdAt": "2026-01-06T20:56:38.4833333",
+    "userId": 1,
+    "user": null,
+    "comments": null
+  },
+  {
+    "id": 2,
+    "title": "BlogTestBynewBlog API",
+    "content": "BlogTestBynewBlog API BODY",
+    "createdAt": "2026-01-11T00:31:10.036732",
+    "userId": 1,
+    "user": null,
+    "comments": null
+  }
+]
